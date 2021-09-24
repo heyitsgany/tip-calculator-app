@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./images/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="splitter logo" class="header__logo" />
+    </header>
+    <main class="container">
+      <div class="form">
+        <label for="bill" class="form__label">Bill</label>
+        <div class="form__input--container">
+          <img
+            src="./images/icon-dollar.svg"
+            alt=""
+            aria-hidden="true"
+            class="form__icon"
+          />
+          <input type="number" class="form__input" id="bill" placeholder="0" />
+        </div>
+        <label for="tip" class="form__label">Select Tip %</label>
+        <div class="form__selection--container">
+          <input type="button" value="5%" class="tip__btn amount--5" />
+          <input type="button" value="10%" class="tip__btn amount--10" />
+          <input type="button" value="15%" class="tip__btn amount--15" />
+          <input type="button" value="25%" class="tip__btn amount--25" />
+          <input type="button" value="50%" class="tip__btn amount--50" />
+          <input
+            type="number"
+            id="tip"
+            class="form__input tip__custom"
+            placeholder="Custom"
+          />
+        </div>
+        <label for="people" class="form__label">Number of People</label>
+        <p class="form__warning people__warning">Can't be zero</p>
+        <div class="form__input--container">
+          <img
+            src="./images/icon-person.svg"
+            alt=""
+            aria-hidden="true"
+            class="form__icon"
+          />
+          <input
+            type="number"
+            class="form__input"
+            id="people"
+            placeholder="0"
+          />
+        </div>
+      </div>
+      <div class="results">
+        <div class="results__row">
+          <div class="results__description">
+            <h1 class="results__type">Tip Amount</h1>
+            <p class="results__unit">/ person</p>
+          </div>
+          <p class="results__value tip__amount">$4.27</p>
+        </div>
+        <div class="results__row">
+          <div class="results__description">
+            <h1 class="results__type">Total</h1>
+            <p class="results__unit">/ person</p>
+          </div>
+          <p class="results__value total__amount">$32.79</p>
+        </div>
+        <input type="button" value="RESET" class="results__reset--btn" />
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/heyitsgany" target="_blank"
+        >Jason Heys</a
+      >.
+    </footer>
+  </body>
+</html>
