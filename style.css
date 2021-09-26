@@ -24,7 +24,7 @@
 
 body {
   min-height: 100vh;
-  padding: 3.1rem 0 0 0;
+  padding-top: 3.1rem;
   background-color: var(--neutral-light);
   color: var(--neutral-darker);
   font-family: "Space Mono", sans-serif;
@@ -212,20 +212,25 @@ input {
   visibility: hidden;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   body {
-    padding: 5rem;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .header {
-    padding-bottom: 5.05rem;
+    position: absolute;
+    top: 4.75rem;
   }
 
   .container {
     display: grid;
     max-width: 57.5rem;
     max-height: 30.0625rem;
-    margin: 0 auto;
+    margin-top: 4rem;
     padding: 2rem;
     border-radius: 1.5rem;
     box-shadow: 10px 5px 30px 2px var(--neutral);
@@ -294,7 +299,7 @@ input {
 }
 
 /* MAKE SMALL MOBILE RESPONSIVE */
-@media screen and (max-width: 347px) {
+@media screen and (max-width: 350px) {
   html {
     font-size: 90%;
   }
